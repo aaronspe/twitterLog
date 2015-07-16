@@ -1,0 +1,13 @@
+<template name="loggedIn">
+<h1>Lean</h1>
+  {{#if currentUser}}
+    {{currentUser.services.twitter.screenName}}
+  <img src="{{currentUser.services.twitter.profile_image_url}}"/>
+  <a href="https://40.media.tumblr.com/tumblr_mali4daior1rs60iuo1_540.jpg"></a>
+  <p> You're in. This is just a bunch of text to see how wide this page goes and see how the css flows cuz I don't know what the heck is going on when the currentLbs and currentBF won't render next to each other horizontally.</p>
+  
+  <p>{{> currentLbs}} / {{> currentBF}}</p>
+  {{else}}
+  <p>Log in for full on batshit crazy awesomeness.</p>
+  {{/if}}
+  </template>
